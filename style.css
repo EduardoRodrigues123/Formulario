@@ -1,0 +1,166 @@
+
+:root{
+    --cor-de-fundo: #012030;
+    --cor-das-letras: #9AEBA3;
+}
+
+
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-das-letras);
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 2em 0;
+    
+    margin: 0;
+    padding: 1em;
+}
+
+header p{
+    font-style: italic;
+}
+
+
+main{
+    background-color: #13678A;
+    margin: 0px auto;
+    width: 940px;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    padding: 20px;
+    margin-top: 1em;
+}
+
+form{
+    padding: 10px;
+}
+
+form label{
+    display: block;
+    font-size: 26px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.input-padrao{
+    margin-bottom: 1.5em;
+    margin-left: 20px;
+    width: 85%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    border-style: none;
+}
+
+
+
+.texto{
+    width: 95%;
+    display: inline;
+    margin: 0 1em;
+    font-size: 18px;
+    border-radius: 10px;
+    resize: vertical;
+}
+
+select{
+    width: 50%;
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+
+.botao-enviar{
+   padding: 10px;
+   font-size: 20px;
+   font-weight: bold;
+   margin-top: 1em;
+   display: block;
+   margin: auto;
+   margin-top: 20px;
+   width: 30%;
+   color: var(--cor-das-letras);
+   background-color: #012030;
+   border-radius: 10px;
+   border-style: none;
+   transition: 1s all;
+    cursor: pointer;
+}
+
+.botao-enviar:hover{
+    background-color: var(--cor-das-letras);
+    color: var(--cor-de-fundo);
+    transform: scale(1.2);
+}
+
+footer{
+    text-align: center;
+    
+    padding: 50px;
+}
+
+footer h2{
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.container-lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.container-lista a{
+    color: var(--cor-das-letras);
+    margin-left: 0.5em;
+    vertical-align: top;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.container-lista a:hover{
+    text-decoration: underline;
+    color: #13678A;
+}
+
+.recomendacao{
+   margin: 2em 0px;
+}
+
+
+.melhoramento{
+    color: white;
+    margin: 2em 0;
+}
+
+.melhoramento label{
+    margin: 15px;
+
+}
+
+@media only screen and (max-width: 1000px){
+    main{
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .container-lista{
+        display: block;
+    }
+}
